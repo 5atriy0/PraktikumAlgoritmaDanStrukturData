@@ -12,8 +12,8 @@ mempunyai batas nilai 0 ‐ 100. Ketika pengguna memasukkan diluar rentang terse
 akan keluar output “nilai tidak valid”. Jika Nilai Huruf yang didapatkan adalah A,B+,B+C+,C maka LULUS, 
 jika nilai huruf D dan E maka TIDAK LULUS.
 * Output
-![alt text](image.png)
-![alt text](image-1.png)
+**![alt text](image.png)**
+**![alt text](image-1.png)**
 
 ### 2. **Perulangan**
 Membuat program yang dapat menampilkan deretan bilangan dari angka 1 sampai n kecuali
