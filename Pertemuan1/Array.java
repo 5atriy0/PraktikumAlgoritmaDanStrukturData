@@ -9,79 +9,73 @@ public class Array {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        double nilSetara, totNil = 0, ipSMT = 0;
-        int sks = 18;
-        String nilHuruf;
-        String [][] mataKuliah = new String[8][2];
-        double [][] angka = new double[8][2];
-        double [] nilaiAngka = new double[8];
+        String[][] matkul = new String[8][2];
+        double[][] nilai = new double[8][2];
+        double[] bobotSKS = {2, 2, 2, 3, 2, 2, 3, 2};
+        double jumlahSKS = 18;
 
+    
+        matkul[0][0] = "Pancasila                   ";
+        matkul[1][0] = "Konsep Teknologi Informasi  ";
+        matkul[2][0] = "CTPS                        ";
+        matkul[3][0] = "Matematika Dasar            ";
+        matkul[4][0] = "Bahasa Inggris              ";
+        matkul[5][0] = "Dasar Pemrograman           ";
+        matkul[6][0] = "Praktikum Dasar Pemrograman ";
+        matkul[7][0] = "Keselamatan Kesehatan Kerja ";
 
-        for (int i = 0; i < 8; i++) {
-            System.out.print("Mata Kuliah : ");
-            String matkul = scan.nextLine();
-            mataKuliah[i][0] = matkul;
+        System.out.println("-----------------------------------------------------------------------");
+        System.out.println("PROGRAM MENGHITUNG IP SEMESTER");
+        System.out.println("-----------------------------------------------------------------------");
 
-            System.out.print("Bobot SKS : ");
-            double bobotSKS = scan.nextDouble();
-            angka[i][0] = bobotSKS;
-            scan.nextLine();
-        }
+        for (int i = 0; i<matkul.length; i++){
+            System.out.print("Masukkan nilai ANGKA dari MK " + matkul[i][0] + ": ");
+            nilai[i][0]=scan.nextDouble();
 
-        System.out.println("===============================");
-        System.out.println("Program Menghitung IP Semester");
-        System.out.println("===============================");
-
-        for (int i = 0; i < 8; i++) {
-            System.out.printf("%-2s %-37s %s", "masukkan nilai Angka untuk MK", mataKuliah[i][0], ": ");
-            double nilai = scan.nextDouble();
-            nilaiAngka [i] = nilai;
-
-            if (nilaiAngka[i] >= 81) {
-                nilHuruf = "A";
-                nilSetara = 4;
-            }else if (nilaiAngka[i] >= 74) {
-                nilHuruf = "B+";
-                nilSetara = 3.5;
-            } else if (nilaiAngka[i] >= 66) {
-                nilHuruf = "B";
-                nilSetara = 3;
-            } else if (nilaiAngka[i] >= 61) {
-                nilHuruf = "C+";
-                nilSetara = 2.5;
-            } else if (nilaiAngka[i] >= 51) {
-                nilHuruf = "C";
-                nilSetara = 2;
-            } else if (nilaiAngka[i] >= 40) {
-                nilHuruf = "D";
-                nilSetara = 1;
+            if(nilai[i][0]>80){
+                matkul[i][1]="A ";
+                nilai[i][1]=4;
+            } else if (nilai[i][0]>73){
+                matkul[i][1]="B+";
+                nilai[i][1]=3.5;
+            } else if (nilai[i][0]>65){
+                matkul[i][1]="B ";
+                nilai[i][1]=3;
+            } else if (nilai[i][0]>60){
+                matkul[i][1]="C+";
+                nilai[i][1]=2.5;
+            } else if (nilai[i][0]>50){
+                matkul[i][1]="C ";
+                nilai[i][1]=2;
+            } else if (nilai[i][0]>39){
+                matkul[i][1]="D ";
+                nilai[i][1]=1;
             } else {
-                nilHuruf = "E";
-                nilSetara = 0;
+                matkul[i][1]="E ";
+                nilai[i][1]=0;
             }
-
-            mataKuliah[i][1] = nilHuruf;
-            angka[i][1] = nilSetara;
-            
         }
 
-        System.out.println("======================");
-        System.out.println("Hasil Konversi Nilai");
-        System.out.println("======================");
-
-        System.out.printf("%-40s %-14s %-14s %s\n", "MK", "Nilai Angka", "Nilai Huruf", "Bobot Nilai");
-
-        for (int i = 0; i < 8; i++) {
-            System.out.printf("%-40s %-19s %-13s %s\n", mataKuliah[i][0], nilaiAngka[i], mataKuliah[i][1], angka[i][1]);
+        System.out.println("-----------------------------------------------------------------------");
+        System.out.println("|        Mata kuliah        | Nilai Angka | Nilai Huruf | Bobot Nilai |");
+        System.out.println("-----------------------------------------------------------------------");
+        for (int k=0; k<matkul.length; k++){
+            System.out.println(matkul[k][0] + "     " + nilai[k][0] + "            " + matkul[k][1] + "            " + nilai[k][1]);
         }
 
-        for (int i = 0; i < 8; i++) {
-            totNil += angka[i][1] * angka[i][0];
+        //Mata Kuliah direpresentasikan dengan *matkul[n][0]*
+        //Nilai Angka direpresentasikan dengan *nilai[n][0]*
+        //Nilai Huruf direpresentasikan dengan *matkul[n][1]*
+        //Bobot nilai direpresentasikan dengan *nilai[n][1]*
+
+        double iP = 0;
+        for (int j = 0; j<matkul.length; j++){
+            iP += nilai[j][1]*bobotSKS[j];
         }
 
-        ipSMT = totNil / sks;
+        iP/=18; //jumlah SKS adalah 18
 
-        System.out.println("======================");
-        System.out.printf("IP : %.2f%n", ipSMT);
+        System.out.println("-----------------------------------------------------------------------");
+        System.out.printf("IP : %.2f", iP);
     }
 }
