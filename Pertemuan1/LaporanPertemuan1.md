@@ -14,6 +14,7 @@ jika nilai huruf D dan E maka TIDAK LULUS.
 * Output
 
 ![alt text](image.png)
+
 ![alt text](image-1.png)
 
 ### 2. **Perulangan**
@@ -55,5 +56,7 @@ Buat program untuk menghitung rumus kecepatan, jarak, dan waktu.
 * Output
 
 ![alt text](image-6.png)
+
 ![alt text](image-7.png)
+
 ![alt text](image-8.png)
