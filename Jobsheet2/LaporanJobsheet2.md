@@ -84,10 +84,12 @@ berparameter dari class Buku!
 hitungDiskon(), dan hitungHargaBayar() dengan penjelasan sebagai berikut:
 * Method hitungHargaTotal() digunakan untuk menghitung harga total yang merupakan 
 perkalian antara harga dengan jumlah buku yang terjual
+
 * Method hitungDiskon() digunakan untuk menghitung diskon dengan aturan berikut:
-** Jika harga total lebih dari 150000, maka harga didiskon sebesar 12%
-** Jika harga total antara 75000 sampai 150000, maka harga didiskon sebesar 5%
-** Jika harga total kurang dari 75000, maka harga tidak didiskon
+1. Jika harga total lebih dari 150000, maka harga didiskon sebesar 12%
+2. Jika harga total antara 75000 sampai 150000, maka harga didiskon sebesar 5%
+3. Jika harga total kurang dari 75000, maka harga tidak didiskon
+
 * Method hitungHargaBayar() digunakan untuk menghitung harga total setelah dikurangi 
 diskon
 Class diagram Buku setelah penambahan ketiga method tersebut adalah sebagai berikut.
@@ -101,15 +103,18 @@ Class diagram Buku setelah penambahan ketiga method tersebut adalah sebagai beri
 Penjelasan dari atribut dan method pada class Dragon tersebut adalah sebagai berikut:
 * Atribut x digunakan untuk menyimpan posisi koordinat x (mendatar) dari dragon, sedangkan 
 atribut y untuk posisi koordinat y (vertikal)
+
 * Atribut width digunakan untuk menyimpan lebar dari area permainan, sedangkan height
 untuk menyimpan panjang area
+
 * Method moveLeft() digunakan untuk mengubah posisi dragon ke kiri (koordinat x akan 
 berkurang 1), sedangkan moveRight() untuk bergerak ke kanan (koordinat x akan bertambah 
 1). Perlu diperhatikan bahwa koordinat x tidak boleh lebih kecil dari 0 atau lebih besar dari 
 nilai width. Jika koordinat x < 0 atau x > width maka panggil method detectCollision()
+
 * Method moveUp() digunakan untuk mengubah posisi dragon ke atas (koordinat y akan 
-berkurang 1), sedangkan moveDown() untuk bergerak ke bawah (koordinat y akan bertambah 1). Perlu diperhatikan bahwa koordinat y tidak boleh lebih kecil dari 0 atau lebih besar dari 
-nilai height. Jika koordinat y < 0 atau y > height maka panggil method detectCollision()
+berkurang 1), sedangkan moveDown() untuk bergerak ke bawah (koordinat y akan bertambah 1). Perlu diperhatikan bahwa koordinat y tidak boleh lebih kecil dari 0 atau lebih besar dari nilai height. Jika koordinat y < 0 atau y > height maka panggil method detectCollision()
+
 * Method detectCollision() akan mencetak pesan “Game Over” apabila dragon menyentuh 
 ujung area permainan.
 
