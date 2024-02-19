@@ -28,6 +28,12 @@ public class Buku26 {
             harga = hrg;
         }
 
+        void hitungHargaTotal(int jmlTerjual) {
+            int hargaTotal = harga*jmlTerjual;
+
+            System.out.println("Harga total     : "+hargaTotal);
+        }
+
         public Buku26() {
 
         }
