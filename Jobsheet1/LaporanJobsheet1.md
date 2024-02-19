@@ -1,4 +1,4 @@
-# **LAPORAN PERTEMUAN 1**
+# **LAPORAN JOBSHEET 1**
 ---
 ## Nama    : Satriyo Bagus Susianto
 ## No      : 26

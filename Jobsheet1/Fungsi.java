@@ -1,4 +1,4 @@
-package Pertemuan1;
+package Jobsheet1;
 
 /**
  * Fungsi
