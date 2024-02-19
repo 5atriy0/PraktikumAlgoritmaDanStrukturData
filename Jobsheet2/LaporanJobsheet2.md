@@ -1,9 +1,16 @@
 # **LAPORAN JOBSHEET 1**
+
 ---
+
+* ![alt text](POLINEMA-LOGO.png)
+
+---
+
 ## Nama    : Satriyo Bagus Susianto
 ## No      : 26
 ## Kelas   : 1-H
 ## NIM     : 2341720249
+
 ---
 
 ### A. Percobaan 1 : Deklarasi Class, Atribut, dan Method
@@ -12,16 +19,25 @@
 #### Pertanyaan :
 1. Sebutkan dua karakteristik class atau object!
 
-* 
+> Atribut dan method
 
 2. Perhatikan class Buku pada Praktikum 1 tersebut, ada berapa atribut yang dimiliki oleh class 
 Buku? Sebutkan apa saja atributnya!
 
-* 
+> Ada 5, yaitu :
+> judul: String
+> pengarang: String
+> halaman: int
+> stok: int
+> harga: int
 
 3. Ada berapa method yang dimiliki oleh class tersebut? Sebutkan apa saja methodnya!
 
-* 
+> Ada 4, yaitu :
+> tampilInformasi(): void
+> terjual(jml: int): void
+> restock(n: int): void
+> gantiHarga(hrg: int): int
 
 4. Perhatikan method terjual() yang terdapat di dalam class Buku. Modifikasi isi method tersebut 
 sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih besar dari 0)!
@@ -30,7 +46,7 @@ sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih bes
 
 5. Menurut Anda, mengapa method restock() mempunyai satu parameter berupa bilangan int?
 
-* 
+> Karena method restok() digunakan untuk menambahkan jumlah stok dengan nilai yang spesifik
 
 ### B. Percobaan 2 : Instansiasi Object, serta Mengakses Atribut dan Method
 * 
@@ -39,15 +55,19 @@ sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih bes
 1. Pada class BukuMain, tunjukkan baris kode program yang digunakan untuk proses instansiasi!
 Apa nama object yang dihasilkan?
 
-* 
+* ![alt text](image-3.png)
+
+> Nama objek yang dihasilkan adalah 'bk1'
 
 2. Bagaimana cara mengakses atribut dan method dari suatu objek?
 
-* 
+> Cara mengakses atribut adalah dengan mengetikkan (namaObjek).(namaAtribut)
+Sedangkan untuk mengakses metode adalah dengan mengetikkan (namaObjek).(namaMethod())
 
 3. Mengapa hasil output pemanggilan method tampilInformasi() pertama dan kedua berbeda?
 
-* 
+> Karena terdapat beberapa pemanggilan methode yang berisikan perintah untuk mengubah nilai. 
+Dalam kode program ini, terdapat pemanggilan method terjual() untuk mengurangi jumlah stok dan method gantiHarga() untuk mengganti harga.
 
 ### C. Percobaan 3 : Membuat Konstruktor
 * 
@@ -56,18 +76,18 @@ Apa nama object yang dihasilkan?
 1. Pada class Buku di Percobaan 3, tunjukkan baris kode program yang digunakan untuk 
 mendeklarasikan konstruktor berparameter!
 
-* 
+* ![alt text](image-4.png)
 
 2. Perhatikan class BukuMain. Apa sebenarnya yang dilakukan pada baris program berikut?
 
-![alt text](image.png)
+* ![alt text](image.png)
 
-* 
+* Instansiasi dan mengakses atribut
 
 3. Hapus konstruktor default pada class Buku, kemudian compile dan run program. Bagaimana 
 hasilnya? Jelaskan mengapa hasilnya demikian!
 
-* 
+> Hasilnya adalah 'undefined', karena tidak ada konstruktor khusus
 
 4. Setelah melakukan instansiasi object, apakah method di dalam class Buku harus diakses 
 secara berurutan? Jelaskan alasannya!
