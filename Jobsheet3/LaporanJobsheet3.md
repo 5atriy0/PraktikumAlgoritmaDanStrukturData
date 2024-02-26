@@ -43,7 +43,7 @@ konstruktur pada baris program berikut :
 
 #### Pertanyaan :
 1. Apakah array of object dapat diimplementasikan pada array 2 Dimensi?
-*
+> Iya 
 
 2. Jika jawaban soal no satu iya, berikan contohnya! Jika tidak, jelaskan!
 *
@@ -62,7 +62,7 @@ pada ppArray[i] sekaligus ppArray[0]?Jelaskan !
 
 ### C. Percobaan 3 : Penambahan Operasi Matematika di Dalam Method
 
-e
+![alt text](image-10.png)
 
 #### Pertanyaan :
 1. Dapatkah konstruktor berjumlah lebih dalam satu kelas? Jelaskan dengan contoh!
