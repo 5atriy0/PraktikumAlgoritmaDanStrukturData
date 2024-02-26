@@ -39,7 +39,7 @@ konstruktur pada baris program berikut :
 
 ### B. Percobaan 2 : Menerima Input Isian Array Menggunakan Looping
 
-r
+![alt text](image-6.png)
 
 #### Pertanyaan :
 1. Apakah array of object dapat diimplementasikan pada array 2 Dimensi?
@@ -59,4 +59,60 @@ dibawah ini akan memunculkan error saat dijalankan. Mengapa?
 5. Apakah boleh Jika terjadi duplikasi instansiasi array of objek, misalkan saja instansiasi dilakukan
 pada ppArray[i] sekaligus ppArray[0]?Jelaskan !
 *
+
+### C. Percobaan 3 : Penambahan Operasi Matematika di Dalam Method
+
+e
+
+#### Pertanyaan :
+1. Dapatkah konstruktor berjumlah lebih dalam satu kelas? Jelaskan dengan contoh!
+*
+
+2. Jika diketahui terdapat class Segitiga seperti berikut ini:
+![alt text](image-7.png)
+Tambahkan konstruktor pada class Segitiga tersebut yang berisi parameter int a, int t
+yang masing-masing digunakan untuk mengisikan atribut alas dan tinggi.
+*
+
+3. Tambahkan method hitungLuas() dan hitungKeliling() pada class Segitiga
+tersebut. Asumsi segitiga adalah segitiga siku-siku. (Hint: Anda dapat menggunakan bantuan
+library Math pada Java untuk mengkalkulasi sisi miring)
+*
+
+4. Pada fungsi main, buat array Segitiga sgArray yang berisi 4 elemen, isikan masing-masing
+atributnya sebagai berikut:
+![alt text](image-8.png)
+* 
+
+5. Kemudian menggunakan looping, cetak luas dan keliling dengan cara memanggil method
+hitungLuas() dan hitungKeliling().
+*
+
+#### Latihan :
+1. Buatlah program yang dapat menghitung luas permukaan dan volume bangun ruang kerucut,
+limas segi empat sama sisi, dan bola. Buatlah 3 (tiga) class sesuai dengan jumlah jenis bangun
+ruang. Buatlah satu main class untuk membuat array of objects yang menginputkan atributatribut yang ada menggunakan konstruktor semua bangun ruang tersebut. Dengan ketentuan:
+
+    a. Buat looping untuk menginputkan masing-masing atributnya, kemudian tampilkan
+luas permukaan dan volume dari tiap jenis bangun ruang tersebut.
+
+    b. Pada kerucut, inputan untuk atribut hanya jari-jari dan sisi miring
+   
+    c. Pada limas segi empat sama sisi, inputan untuk atribut hanya panjang sisi alas dan
+tinggi limas
+
+    d. Pada bola, inpuntan untuk atribut hanya jari-jari
+
+
+2. Sebuah kampus membutuhkan program untuk menampilkan informasi mahasiswa berupa nama,
+nim, jenis kelamin dan juga IPK mahasiswa. Program dapat menerima input semua informasi
+tersebut, kemudian menampilkanya kembali ke user. Implementasikan program tersebut jika
+dimisalkan terdapat 3 data mahasiswa yang tersedia. Contoh output program:
+![alt text](image-9.png)
+
+3. Modifikasi program Latihan no.2 di atas, sehingga bisa digunakan untuk menghitung rata-rata IPK,
+serta menampilkan data mahasiswa dengan IPK terbesar! (gunakan method untuk masing-masing
+proses tersebut)
+
+
 
