@@ -34,6 +34,10 @@ public class Buku26 {
             System.out.println("Harga total     : "+hargaTotal);
         }
 
+        void hitungDiskon() {
+            
+        }
+
         public Buku26() {
 
         }

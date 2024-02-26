@@ -1,8 +1,8 @@
-# **LAPORAN JOBSHEET 1**
+# **LAPORAN JOBSHEET 2**
 
 ---
 
-* ![alt text](POLINEMA-LOGO.png)
+![alt text](POLINEMA-LOGO.png)
 
 ---
 
@@ -55,7 +55,7 @@ sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih bes
 1. Pada class BukuMain, tunjukkan baris kode program yang digunakan untuk proses instansiasi!
 Apa nama object yang dihasilkan?
 
-* ![alt text](image-3.png)
+![alt text](image-3.png)
 
 > Nama objek yang dihasilkan adalah 'bk1'
 
@@ -76,11 +76,11 @@ Dalam kode program ini, terdapat pemanggilan method terjual() untuk mengurangi j
 1. Pada class Buku di Percobaan 3, tunjukkan baris kode program yang digunakan untuk 
 mendeklarasikan konstruktor berparameter!
 
-* ![alt text](image-4.png)
+![alt text](image-4.png)
 
 2. Perhatikan class BukuMain. Apa sebenarnya yang dilakukan pada baris program berikut?
 
-* ![alt text](image.png)
+![alt text](image.png)
 
 * Instansiasi dan mengakses atribut
 
