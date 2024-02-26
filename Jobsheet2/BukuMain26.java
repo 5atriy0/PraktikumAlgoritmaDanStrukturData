@@ -21,5 +21,13 @@ public class BukuMain26 {
         Buku26 bk2 = new Buku26("Self Reward", "Maheera Ayesha", 160, 29, 59000);
         bk2.terjual(11);
         bk2.tampilInformasi();
+
+        Buku26 bukuSatriyo = new Buku26("Algoritma dan Struktur Data", "Satriyo Bagus Susianto", 123, 12, 55000);
+        bukuSatriyo.terjual(6);
+        bukuSatriyo.tampilInformasi();
+        bukuSatriyo.hitungHargaTotal(6);
+        bukuSatriyo.hitungDiskon(6);
+        bukuSatriyo.hitungHargaBayar(6);
+        System.out.println();
     }
 }

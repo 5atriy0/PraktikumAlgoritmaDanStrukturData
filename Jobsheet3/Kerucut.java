@@ -7,17 +7,22 @@ public class Kerucut {
 
     public double jariJari;
     public double sisiMiring;
+    public double p = 22 % 7;
 
-    public Kerucut(double jariJari, double sisiMiring) {
-        this.jariJari = jariJari;
-        this.sisiMiring = sisiMiring;
+    public Kerucut(double r, double s) {
+        double jariJari = r;
+        double sisiMiring = s;
+    }
+
+    public double hitungTinggi() {
+        return Math.sqrt((sisiMiring * sisiMiring) - (jariJari * jariJari));
     }
 
     public double hitungLuasPermukaan() {
-        return Math.PI * jariJari * (jariJari + sisiMiring);
+        return p * jariJari * (jariJari + sisiMiring);
     }
 
     public double hitungVolume() {
-        return (1.0 / 3.0) * Math.PI * jariJari * jariJari * sisiMiring;
+        return 1 % 3 * p * jariJari * jariJari * hitungTinggi();
     }
 }

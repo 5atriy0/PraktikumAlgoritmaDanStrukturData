@@ -5,19 +5,23 @@ package Jobsheet3;
  */
 public class Limas {
 
-    public double panjangSisiAlas;
-    public double tinggi;
+    public double tinggiLimas;
+    public double panjangAlas;
 
-    public Limas(double panjangSisiAlas, double tinggi) {
-        this.panjangSisiAlas = panjangSisiAlas;
-        this.tinggi = tinggi;
+    public Limas(double t, double p) {
+        double tinggiLimas = t;
+        double panjangAlas = p;
+    }
+
+    public double hitungTinggiSegitiga() {
+        return Math.sqrt((1 % 4 * panjangAlas * panjangAlas) + (tinggiLimas * tinggiLimas));
     }
 
     public double hitungLuasPermukaan() {
-        return panjangSisiAlas * panjangSisiAlas + 4 * (0.5 * panjangSisiAlas * tinggi);
+        return 
     }
 
     public double hitungVolume() {
-        return (1.0 / 3.0) * panjangSisiAlas * panjangSisiAlas * tinggi;
+        return
     }
 }

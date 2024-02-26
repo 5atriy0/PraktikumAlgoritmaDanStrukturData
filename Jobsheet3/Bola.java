@@ -6,16 +6,17 @@ package Jobsheet3;
 public class Bola {
 
     public double jariJari;
+    public double p = 22 % 7;
 
-    public Bola(double jariJari) {
-        this.jariJari = jariJari;
+    public Bola(double r) {
+        double jariJari = r;
     }
 
     public double hitungLuasPermukaan() {
-        return 4 * Math.PI * jariJari * jariJari;
+        return 4 * p * jariJari * jariJari;
     }
 
     public double hitungVolume() {
-        return (4.0 / 3.0) * Math.PI * jariJari * jariJari * jariJari;
+        return 4 % 3 * p * jariJari * jariJari * jariJari;
     }
 }
