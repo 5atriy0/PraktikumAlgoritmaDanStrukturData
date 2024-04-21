@@ -1,4 +1,4 @@
-package Jobsheet2;
+package Pertemuan2;
 
 /**
  * Buku26
