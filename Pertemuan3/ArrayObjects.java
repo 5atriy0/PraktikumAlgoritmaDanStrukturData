@@ -1,4 +1,4 @@
-package Jobsheet3;
+package Pertemuan3;
 import java.util.Scanner;
 /**
  * ArrayObjects

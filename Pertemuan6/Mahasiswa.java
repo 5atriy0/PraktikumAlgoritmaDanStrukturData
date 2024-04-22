@@ -1,4 +1,4 @@
-package Jobsheet6;
+package Pertemuan6;
 
 /**
  * Mahasiswa

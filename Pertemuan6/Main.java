@@ -1,4 +1,4 @@
-package Jobsheet6;
+package Pertemuan6;
 
 import java.util.Scanner;
 
