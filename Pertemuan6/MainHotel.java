@@ -11,10 +11,10 @@ public class MainHotel {
         Scanner scan = new Scanner(System.in);
 
         HotelService rooms = new HotelService();
-        Hotel H1 = new Hotel("Everyday Smart Hotel", "Malang", 350000, 2);
-        Hotel H2 = new Hotel("Harris Hotel", "Malang", 535000, 3);
-        Hotel H3 = new Hotel("The Alana Hotel", "Malang", 430000, 3);
-        Hotel H4 = new Hotel("Whize Prime Hotel", "Malang", 780000, 4);
+        Hotel H1 = new Hotel("Everyday Smart Hotel", "Malang", 350000, (byte) 2);
+        Hotel H2 = new Hotel("Harris Hotel", "Malang", 535000, (byte) 3);
+        Hotel H3 = new Hotel("The Alana Hotel", "Malang", 430000, (byte) 3);
+        Hotel H4 = new Hotel("Whize Prime Hotel", "Malang", 780000, (byte) 4);
 
         rooms.tambah(H1);
         rooms.tambah(H2);
@@ -25,7 +25,7 @@ public class MainHotel {
         rooms.selectionSort();
         rooms.tampilAll();
 
-        System.out.println("Hotel dengan tertinggi ke terendah");
+        System.out.println("Hotel dengan bintang tertinggi ke terendah");
         rooms.bubbleSort();
         rooms.tampilAll();
     }

@@ -7,9 +7,9 @@ public class Hotel {
 
     String nama, kota;
     int harga;
-    int bintang;
+    Byte bintang;
 
-    Hotel(String n,String k, int h, int b) {
+    Hotel(String n,String k, int h, Byte b) {
         nama = n;
         kota = k;
         harga = h;
@@ -19,7 +19,7 @@ public class Hotel {
     void tampil() {
         System.out.println("Nama = " + nama);
         System.out.println("Kota = " + kota);
-        System.out.println("Harga = " + harga);
+        System.out.println("Harga = Rp " + harga);
         System.out.println("Bintang = " + bintang);
     }
 }
