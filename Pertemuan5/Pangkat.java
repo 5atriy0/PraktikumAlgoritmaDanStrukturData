@@ -1,4 +1,4 @@
-package Jobsheet4;
+package Pertemuan5;
 
 /**
  * Pangkat
@@ -7,7 +7,7 @@ public class Pangkat {
 
     public int nilai, pangkat;
 
-    public Pangkat(int nilai, int pangkat) {
+    Pangkat (int nilai, int pangkat){
         this.nilai = nilai;
         this.pangkat = pangkat;
     }
@@ -23,11 +23,11 @@ public class Pangkat {
     int pangkatDC(int a, int n) {
         if (n == 0) {
             return 1;
-        } else{
-            if (n % 2 == 1) { //Bilangan Ganjil
-                return (pangkatDC(a, n/2) * pangkatDC(a, n/2) * a);
-            }else {
-                return (pangkatDC(a, n/2) * pangkatDC(a, n/2));
+        } else {
+            if (n % 2 == 1) {
+                return (pangkatDC(a, n / 2) * pangkatDC(a, n / 2) * a);
+            } else {
+                return (pangkatDC(a, n / 2) * pangkatDC(a, n / 2));
             }
         }
     }

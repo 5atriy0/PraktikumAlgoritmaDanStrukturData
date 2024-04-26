@@ -26,9 +26,9 @@ public class MahasiswaMain {
             System.out.print("Masukkan NIM          : ");
             mhsArray[i].nim = a.nextLong();
             System.out.print("Masukkan jenis kelamin: ");
-            mhsArray[i].gender = sc.next().charAt(0);
+            mhsArray[i].gender = a.next().charAt(0);
             System.out.print("Masukkan IPK          : ");
-            mhsArray[i].ipk = sc.nextDouble();
+            mhsArray[i].ipk = a.nextDouble();
             mhs.jmlIPK += mhsArray[i].ipk;
         }
 

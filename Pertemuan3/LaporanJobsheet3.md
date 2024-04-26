@@ -58,20 +58,20 @@
 > Iya 
 
 2. Jika jawaban soal no satu iya, berikan contohnya! Jika tidak, jelaskan!
-*
+> Iya
+<img src = "image-11.png">
 
 3. Jika diketahui terdapat class Persegi yang memiliki atribut sisi bertipe integer, maka kode
 dibawah ini akan memunculkan error saat dijalankan. Mengapa?
-
-    <img src = "image-5.png">
-*
+<img src = "image-5.png">
+> karena konstruktor yang memiliki parameter untuk menginisialisasikan atribut sisi belum dipanggil
 
 4. Modifikasi kode program pada praktikum 3.3 agar length array menjadi inputan dengan Scanner!
-*
+<img src = "image-12.png">
 
 5. Apakah boleh Jika terjadi duplikasi instansiasi array of objek, misalkan saja instansiasi dilakukan
 pada ppArray[i] sekaligus ppArray[0]?Jelaskan !
-*
+> Tidak boleh. Ketika sudah melakukan instansiasi objek pada ppArray[0], maka tidak diperlukan lagi untuk menginstansiasi objek pada ppArray[i] dengan nilai i=0. Jika hal tersebut dilakukan, maka nilai sebelumnya (nilai awal) akan tergantikan
 
 ### C. Percobaan 3 : Penambahan Operasi Matematika di Dalam Method
 
@@ -79,29 +79,30 @@ pada ppArray[i] sekaligus ppArray[0]?Jelaskan !
 
 #### Pertanyaan :
 1. Dapatkah konstruktor berjumlah lebih dalam satu kelas? Jelaskan dengan contoh!
-*
+> Bisa
+<img src = "image-13.png">
 
 2. Jika diketahui terdapat class Segitiga seperti berikut ini:
 
     <img src = "image-7.png">
 
     Tambahkan konstruktor pada class Segitiga tersebut yang berisi parameter int a, int t yang masing-masing digunakan untuk mengisikan atribut alas dan tinggi.
-*
+<img src = "image-14.png">
 
 3. Tambahkan method hitungLuas() dan hitungKeliling() pada class Segitiga
 tersebut. Asumsi segitiga adalah segitiga siku-siku. (Hint: Anda dapat menggunakan bantuan
 library Math pada Java untuk mengkalkulasi sisi miring)
-*
+<img src = "image-15.png">
 
 4. Pada fungsi main, buat array Segitiga sgArray yang berisi 4 elemen, isikan masing-masing
 atributnya sebagai berikut:
 
     <img src = "image-8.png">
-* 
+<img src = "image-16.png">
 
 5. Kemudian menggunakan looping, cetak luas dan keliling dengan cara memanggil method
 hitungLuas() dan hitungKeliling().
-*
+<img src = "image-17.png">
 
 #### Latihan :
 1. Buatlah program yang dapat menghitung luas permukaan dan volume bangun ruang kerucut,
@@ -116,6 +117,10 @@ ruang. Buatlah satu main class untuk membuat array of objects yang menginputkan 
 
     d. Pada bola, inpuntan untuk atribut hanya jari-jari
 
+<img src = "image-18.png">
+<img src = "image-19.png">
+<img src = "image-20.png">
+
 
 2. Sebuah kampus membutuhkan program untuk menampilkan informasi mahasiswa berupa nama,
 nim, jenis kelamin dan juga IPK mahasiswa. Program dapat menerima input semua informasi
@@ -124,7 +129,11 @@ dimisalkan terdapat 3 data mahasiswa yang tersedia. Contoh output program:
 
     <img src = "image-9.png">
 
+<img src = "image-21.png">
+<img src = "image-22.png">
+
 3. Modifikasi program Latihan no.2 di atas, sehingga bisa digunakan untuk menghitung rata-rata IPK,
 serta menampilkan data mahasiswa dengan IPK terbesar! (gunakan method untuk masing-masing
 proses tersebut)
 
+<img src = "image-23.png">
