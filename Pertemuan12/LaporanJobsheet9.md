@@ -42,6 +42,7 @@
 
 2. Jelaskan kegunaan kode dibawah pada method remove
 <img src = "image-2.png">
+
 > Pada bagian kode 'else if(temp.next.data == key)', untuk memeriksa apakah nilai data dari node yang berikutnya adalah sama dengan nilai kunci yang ingin dihapus. Jika kondisi ini terpenuhi, itu berarti kita telah menemukan elemen yang ingin kita hapus dalam linked list.
 
 ### Tugas
