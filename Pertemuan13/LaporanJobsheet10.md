@@ -57,6 +57,8 @@ parameter prev dengan current, dan next dengan null?
 
 Jelaskan maksud dari bagian yang ditandai dengan kotak kuning.
 
+> Kode ini memastikan bahwa ketika sebuah node baru ditambahkan pada indeks 0 atau head (di depan linked list), node tersebut diatur dengan benar sebagai node pertama (head). Node yang awalnya adalah node pertama sekarang menjadi node kedua, dan referensi head diperbarui untuk menunjuk ke node baru.
+
 ### B. Percobaan 2 :
 
 <img src = "image-4.png">
@@ -68,15 +70,23 @@ Jelaskan maksud dari bagian yang ditandai dengan kotak kuning.
     
     head.prev = null;
 
+> Kode ini akan memindahkan atau menggeser posisi head ke node yang ke-2 kemudian menghapus pointer prev dari node ke-2 (yang sekarang menjadi head) menjadi null.
+
 2. Bagaimana cara mendeteksi posisi data ada pada bagian akhir pada method removeLast()?
+
+> Metode removeLast() mendeteksi dan menghapus elemen terakhir dalam linked list dengan langkah-langkah sebagai berikut: Pertama, periksa apakah list kosong dan lemparkan pengecualian jika benar. Kedua, jika list hanya memiliki satu elemen (head.next adalah null), hapus elemen tersebut dengan mengatur head ke null dan kurangi ukuran list. Ketiga, untuk list dengan lebih dari satu elemen, iterasi melalui node hingga menemukan node kedua terakhir (node yang next-nya adalah node terakhir). Terakhir, hapus node terakhir dengan mengatur next dari node kedua terakhir ke null dan kurangi ukuran list.
 
 3. Jelaskan alasan potongan kode program di bawah ini tidak cocok untuk perintah remove!
 
 <img src = "image-5.png">
 
+> tmp seharusnya dijadikan sebagai node pertama (head) bukan head.next. Dan dengan mengatur head.next ke tmp.next, maka akan melewati node kedua dan langsung menghubungkan node pertama ke node setelahnya. Ini akan menghilangkan node kedua dari linked list, bukan node yang dimaksud.
+
 4. Jelaskan fungsi kode program berikut ini pada fungsi remove!
 
 <img src = "image-6.png">
+
+> Kode ini akan menghubungkan node sebelum dan sesudah node yang dihapus sehingga tidak ada lagi node yang terhubung langsung ke node yang dihapus.
 
 ### C. Percobaan 3 :
 
@@ -85,10 +95,21 @@ Jelaskan maksud dari bagian yang ditandai dengan kotak kuning.
 #### Pertanyaan :
 1. Jelaskan method size() pada class DoubleLinkedLists!
 
+> Metode size() pada kelas DoubleLinkedLists digunakan untuk mengembalikan jumlah elemen atau berapa node yang ada dalam double linked list pada saat ini.
+
 2. Jelaskan cara mengatur indeks pada double linked lists supaya dapat dimulai dari indeks ke1!
 
+> Mengatur indeks pada double linked list agar dimulai dari indeks ke-1: Secara default, indeks pada linked list dimulai dari 0. Namun, untuk mengatur agar indeks dimulai dari 1, kita dapat mengubah logika pada method-method yang terkait dengan indeks, seperti add(int item, int index), remove(int index), dan get(int index). Pada setiap method tersebut, kita dapat mengurangi nilai index dengan 1 sebelum digunakan dalam operasi pada linked list.
+
 3. Jelaskan perbedaan karakteristik fungsi Add pada Double Linked Lists dan Single Linked Lists!
+
+> Pada double linked lists, setiap node memiliki dua pointer, yaitu prev (pointer ke node sebelumnya) dan next (pointer ke node berikutnya). Saa tmenambahkan elemen baru, kita perlu memperbarui kedua pointer ini untuk menyambungkan node baru dengan node sebelumnya dan node berikutnya. Sedangkan pada single linked lists, setiap node hanya memiliki satu pointer, yaitu next (pointer ke node berikutnya).
 
 4. Jelaskan perbedaan logika dari kedua kode program di bawah ini!
 
 <img src = "image-8.png">
+
+> Perbedaannya ada pada bagaimana jalan kedua prograamnya meskipun sama sama untuk mencari tau apakah kosong tapi jika a mencari true dan flase tetrlebih dahulu sedangkan yang b langsung
+
+### Tugas :
+1. 
