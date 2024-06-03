@@ -6,16 +6,13 @@ package Pertemuan15;
 public class Node26 {
 
     int data;
-    Node26 left;
-    Node26 right;
+    Node26 prev, next;
+    int jarak;
 
-    public Node26() {
-
-    }
-
-    public Node26(int data) {
-        this.left = null;
+    Node26(Node26 prev, int data, int jarak, Node26 next) {
+        this.prev = prev;
         this.data = data;
-        this.right = null;
+        this.jarak = jarak;
+        this.next = next;
     }
 }
