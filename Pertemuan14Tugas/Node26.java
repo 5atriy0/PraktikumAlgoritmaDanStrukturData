@@ -1,4 +1,4 @@
-package Pertemuan15;
+package Pertemuan14Tugas;
 
 /**
  * Node26
